@@ -1,0 +1,16 @@
+the main folder (z_framework) provides a few modules that can be used separately, except for zf_common.
+
+zf_common : provide stuffs that I commonly used.
+zf_sfml : provide the stuffs that make use of sfml.
+    |_ animations : some simple animations code.
+
+The template folder (template) provides a starting point for most of my game. It provides the Makefile for compilation, the setup for screens and commonly input/event handling code.
+
+The best way to use this is to create a new project using the template folder, and copy z_framework into the root of the new project folder. 
+
+The final look should look something like 
+
+template 
+    |_ z_framework
+        |_ zf_stuffs
+    |_ main.cpp
