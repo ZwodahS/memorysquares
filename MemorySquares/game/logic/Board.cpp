@@ -154,7 +154,7 @@ void Board::update_stateSolved(sf::RenderWindow& window, const sf::Time& delta)
 {
     _showTimer = Show_Duration;
     _state = State_Showing;
-    _currentLevel++;
+    // _currentLevel++;
 }
 
 
@@ -270,7 +270,7 @@ bool Board::click(const sf::Vector2f& position)
             break;
         }
     }
-    if(tile != 0)
+    if(tile != 0 && !tile->isRevealed())
     {
         tile->reveal();
         int value = tile->getValue();

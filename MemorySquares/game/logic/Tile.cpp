@@ -122,3 +122,8 @@ bool Tile::contains(const sf::Vector2f& position)
 {
     return _bound.contains(position);
 }
+
+bool Tile::isRevealed()
+{
+    return _state == State_Revealed || _state == State_Revealing;
+}

@@ -25,7 +25,8 @@ public:
 
     void setIntValue(int i);
     bool isAnimating();
-
+    
+    bool isRevealed();
     void reveal();
     void hide();
     void instantHide();
