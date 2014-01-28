@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E82A0E431896B508001A1942 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = E82A0E421896B508001A1942 /* ResourcePath.mm */; };
+		E82A0E461896B508001A1942 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E82A0E451896B508001A1942 /* main.cpp */; };
+		E8CF995118977AA400D3BBDC /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98DE18977AA400D3BBDC /* Constants.cpp */; };
+		E8CF995218977AA400D3BBDC /* f_assetsloading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98DF18977AA400D3BBDC /* f_assetsloading.cpp */; };
+		E8CF995318977AA400D3BBDC /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98E018977AA400D3BBDC /* Game.cpp */; };
+		E8CF995818977AA400D3BBDC /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98E718977AA400D3BBDC /* Board.cpp */; };
+		E8CF995918977AA400D3BBDC /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98E918977AA400D3BBDC /* Tile.cpp */; };
+		E8CF995E18977AA400D3BBDC /* GameScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98F018977AA400D3BBDC /* GameScreen.cpp */; };
+		E8CF995F18977AA400D3BBDC /* MainScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98F218977AA400D3BBDC /* MainScreen.cpp */; };
+		E8CF996018977AA400D3BBDC /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98F418977AA400D3BBDC /* Screen.cpp */; };
+		E8CF996118977AA400D3BBDC /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98F718977AA400D3BBDC /* Makefile */; };
+		E8CF996418977AA400D3BBDC /* common_f_debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98FC18977AA400D3BBDC /* common_f_debug.cpp */; };
+		E8CF996518977AA400D3BBDC /* debugging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98FD18977AA400D3BBDC /* debugging.cpp */; };
+		E8CF996618977AA400D3BBDC /* Direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF98FF18977AA400D3BBDC /* Direction.cpp */; };
+		E8CF996718977AA400D3BBDC /* f_common_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF990218977AA400D3BBDC /* f_common_common.cpp */; };
+		E8CF996818977AA400D3BBDC /* f_conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF990318977AA400D3BBDC /* f_conversion.cpp */; };
+		E8CF996918977AA400D3BBDC /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF990718977AA400D3BBDC /* Grid.cpp */; };
+		E8CF996A18977AA400D3BBDC /* InputState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF990918977AA400D3BBDC /* InputState.cpp */; };
+		E8CF996B18977AA400D3BBDC /* Probability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF990B18977AA400D3BBDC /* Probability.cpp */; };
+		E8CF996C18977AA400D3BBDC /* Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF990D18977AA400D3BBDC /* Range.cpp */; };
+		E8CF996D18977AA400D3BBDC /* Route.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF990F18977AA400D3BBDC /* Route.cpp */; };
+		E8CF997018977AA400D3BBDC /* AlignmentData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF991518977AA400D3BBDC /* AlignmentData.cpp */; };
+		E8CF997318977AA400D3BBDC /* AnimatableSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF991A18977AA400D3BBDC /* AnimatableSprite.cpp */; };
+		E8CF997418977AA400D3BBDC /* AnimationComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF991C18977AA400D3BBDC /* AnimationComponent.cpp */; };
+		E8CF997518977AA400D3BBDC /* AnimationInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF991E18977AA400D3BBDC /* AnimationInstruction.cpp */; };
+		E8CF997618977AA400D3BBDC /* CompositeInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF992018977AA400D3BBDC /* CompositeInstruction.cpp */; };
+		E8CF997718977AA400D3BBDC /* FadeInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF992318977AA400D3BBDC /* FadeInstruction.cpp */; };
+		E8CF997818977AA400D3BBDC /* MoveInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF992718977AA400D3BBDC /* MoveInstruction.cpp */; };
+		E8CF997918977AA400D3BBDC /* MoveToInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF992918977AA400D3BBDC /* MoveToInstruction.cpp */; };
+		E8CF997A18977AA400D3BBDC /* ScaleInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF992B18977AA400D3BBDC /* ScaleInstruction.cpp */; };
+		E8CF997B18977AA400D3BBDC /* SimpleAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF992D18977AA400D3BBDC /* SimpleAnimator.cpp */; };
+		E8CF997C18977AA400D3BBDC /* WaitInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF992F18977AA400D3BBDC /* WaitInstruction.cpp */; };
+		E8CF997D18977AA400D3BBDC /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF993118977AA400D3BBDC /* Button.cpp */; };
+		E8CF997E18977AA400D3BBDC /* ColoredSpriteGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF993318977AA400D3BBDC /* ColoredSpriteGroup.cpp */; };
+		E8CF997F18977AA400D3BBDC /* f_sfml_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF993818977AA400D3BBDC /* f_sfml_common.cpp */; };
+		E8CF998018977AA400D3BBDC /* ManagedText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF993D18977AA400D3BBDC /* ManagedText.cpp */; };
+		E8CF998118977AA400D3BBDC /* Mouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF993F18977AA400D3BBDC /* Mouse.cpp */; };
+		E8CF998218977AA400D3BBDC /* SelectionBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF994118977AA400D3BBDC /* SelectionBox.cpp */; };
+		E8CF998318977AA400D3BBDC /* sfml_f_debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF994318977AA400D3BBDC /* sfml_f_debug.cpp */; };
+		E8CF998418977AA400D3BBDC /* ShiftButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF994418977AA400D3BBDC /* ShiftButton.cpp */; };
+		E8CF998518977AA400D3BBDC /* SpriteGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF994618977AA400D3BBDC /* SpriteGroup.cpp */; };
+		E8CF998618977AA400D3BBDC /* SpriteSheet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF994818977AA400D3BBDC /* SpriteSheet.cpp */; };
+		E8CF998718977AA400D3BBDC /* TextureRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF994A18977AA400D3BBDC /* TextureRegion.cpp */; };
+		E8CF998818977AA400D3BBDC /* VertexButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8CF994C18977AA400D3BBDC /* VertexButton.cpp */; };
+		E8CF998A18977AAF00D3BBDC /* data in Resources */ = {isa = PBXBuildFile; fileRef = E8CF998918977AAF00D3BBDC /* data */; };
+		E8CF999118977E3500D3BBDC /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CF998B18977B5400D3BBDC /* sfml-graphics.framework */; };
+		E8CF999218977E3500D3BBDC /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CF998C18977B5400D3BBDC /* sfml-system.framework */; };
+		E8CF999318977E3500D3BBDC /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CF998D18977B5400D3BBDC /* sfml-window.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E82A0E3D1896B508001A1942 /* MemorySquares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorySquares.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82A0E411896B508001A1942 /* MemorySquares-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemorySquares-Info.plist"; sourceTree = "<group>"; };
+		E82A0E421896B508001A1942 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		E82A0E441896B508001A1942 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		E82A0E451896B508001A1942 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E8CF98DD18977AA400D3BBDC /* Assets.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Assets.hpp; sourceTree = "<group>"; };
+		E8CF98DE18977AA400D3BBDC /* Constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
+		E8CF98DF18977AA400D3BBDC /* f_assetsloading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = f_assetsloading.cpp; sourceTree = "<group>"; };
+		E8CF98E018977AA400D3BBDC /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		E8CF98E118977AA400D3BBDC /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		E8CF98E718977AA400D3BBDC /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		E8CF98E818977AA400D3BBDC /* Board.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Board.hpp; sourceTree = "<group>"; };
+		E8CF98E918977AA400D3BBDC /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		E8CF98EA18977AA400D3BBDC /* Tile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Tile.hpp; sourceTree = "<group>"; };
+		E8CF98F018977AA400D3BBDC /* GameScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScreen.cpp; sourceTree = "<group>"; };
+		E8CF98F118977AA400D3BBDC /* GameScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScreen.hpp; sourceTree = "<group>"; };
+		E8CF98F218977AA400D3BBDC /* MainScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScreen.cpp; sourceTree = "<group>"; };
+		E8CF98F318977AA400D3BBDC /* MainScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainScreen.hpp; sourceTree = "<group>"; };
+		E8CF98F418977AA400D3BBDC /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
+		E8CF98F518977AA400D3BBDC /* Screen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Screen.hpp; sourceTree = "<group>"; };
+		E8CF98F718977AA400D3BBDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		E8CF98F818977AA400D3BBDC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		E8CF98FA18977AA400D3BBDC /* .f_common.hpp.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .f_common.hpp.swp; sourceTree = "<group>"; };
+		E8CF98FB18977AA400D3BBDC /* Alignment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Alignment.hpp; sourceTree = "<group>"; };
+		E8CF98FC18977AA400D3BBDC /* common_f_debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common_f_debug.cpp; sourceTree = "<group>"; };
+		E8CF98FD18977AA400D3BBDC /* debugging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debugging.cpp; sourceTree = "<group>"; };
+		E8CF98FE18977AA400D3BBDC /* debugging.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = debugging.hpp; sourceTree = "<group>"; };
+		E8CF98FF18977AA400D3BBDC /* Direction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Direction.cpp; sourceTree = "<group>"; };
+		E8CF990018977AA400D3BBDC /* Direction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Direction.hpp; sourceTree = "<group>"; };
+		E8CF990118977AA400D3BBDC /* f_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_common.hpp; sourceTree = "<group>"; };
+		E8CF990218977AA400D3BBDC /* f_common_common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = f_common_common.cpp; sourceTree = "<group>"; };
+		E8CF990318977AA400D3BBDC /* f_conversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = f_conversion.cpp; sourceTree = "<group>"; };
+		E8CF990418977AA400D3BBDC /* f_conversion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_conversion.hpp; sourceTree = "<group>"; };
+		E8CF990518977AA400D3BBDC /* f_debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_debug.hpp; sourceTree = "<group>"; };
+		E8CF990618977AA400D3BBDC /* f_inputs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_inputs.hpp; sourceTree = "<group>"; };
+		E8CF990718977AA400D3BBDC /* Grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
+		E8CF990818977AA400D3BBDC /* Grid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Grid.hpp; sourceTree = "<group>"; };
+		E8CF990918977AA400D3BBDC /* InputState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputState.cpp; sourceTree = "<group>"; };
+		E8CF990A18977AA400D3BBDC /* InputState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InputState.hpp; sourceTree = "<group>"; };
+		E8CF990B18977AA400D3BBDC /* Probability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Probability.cpp; sourceTree = "<group>"; };
+		E8CF990C18977AA400D3BBDC /* Probability.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Probability.hpp; sourceTree = "<group>"; };
+		E8CF990D18977AA400D3BBDC /* Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Range.cpp; sourceTree = "<group>"; };
+		E8CF990E18977AA400D3BBDC /* Range.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Range.hpp; sourceTree = "<group>"; };
+		E8CF990F18977AA400D3BBDC /* Route.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Route.cpp; sourceTree = "<group>"; };
+		E8CF991018977AA400D3BBDC /* Route.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Route.hpp; sourceTree = "<group>"; };
+		E8CF991118977AA400D3BBDC /* TwoDSpace.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TwoDSpace.hpp; sourceTree = "<group>"; };
+		E8CF991318977AA400D3BBDC /* .f_common.hpp.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .f_common.hpp.swp; sourceTree = "<group>"; };
+		E8CF991418977AA400D3BBDC /* .VertexButton.hpp.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .VertexButton.hpp.swp; sourceTree = "<group>"; };
+		E8CF991518977AA400D3BBDC /* AlignmentData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlignmentData.cpp; sourceTree = "<group>"; };
+		E8CF991618977AA400D3BBDC /* AlignmentData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AlignmentData.hpp; sourceTree = "<group>"; };
+		E8CF991818977AA400D3BBDC /* .AnimationComponent.cpp.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .AnimationComponent.cpp.swp; sourceTree = "<group>"; };
+		E8CF991918977AA400D3BBDC /* .AnimationComponent.hpp.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .AnimationComponent.hpp.swp; sourceTree = "<group>"; };
+		E8CF991A18977AA400D3BBDC /* AnimatableSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatableSprite.cpp; sourceTree = "<group>"; };
+		E8CF991B18977AA400D3BBDC /* AnimatableSprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimatableSprite.hpp; sourceTree = "<group>"; };
+		E8CF991C18977AA400D3BBDC /* AnimationComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationComponent.cpp; sourceTree = "<group>"; };
+		E8CF991D18977AA400D3BBDC /* AnimationComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimationComponent.hpp; sourceTree = "<group>"; };
+		E8CF991E18977AA400D3BBDC /* AnimationInstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationInstruction.cpp; sourceTree = "<group>"; };
+		E8CF991F18977AA400D3BBDC /* AnimationInstruction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimationInstruction.hpp; sourceTree = "<group>"; };
+		E8CF992018977AA400D3BBDC /* CompositeInstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompositeInstruction.cpp; sourceTree = "<group>"; };
+		E8CF992118977AA400D3BBDC /* CompositeInstruction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CompositeInstruction.hpp; sourceTree = "<group>"; };
+		E8CF992218977AA400D3BBDC /* EffectFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectFactory.hpp; sourceTree = "<group>"; };
+		E8CF992318977AA400D3BBDC /* FadeInstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FadeInstruction.cpp; sourceTree = "<group>"; };
+		E8CF992418977AA400D3BBDC /* FadeInstruction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FadeInstruction.hpp; sourceTree = "<group>"; };
+		E8CF992518977AA400D3BBDC /* iAnimatable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = iAnimatable.hpp; sourceTree = "<group>"; };
+		E8CF992618977AA400D3BBDC /* iAnimationComponentWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = iAnimationComponentWrapper.hpp; sourceTree = "<group>"; };
+		E8CF992718977AA400D3BBDC /* MoveInstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MoveInstruction.cpp; sourceTree = "<group>"; };
+		E8CF992818977AA400D3BBDC /* MoveInstruction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MoveInstruction.hpp; sourceTree = "<group>"; };
+		E8CF992918977AA400D3BBDC /* MoveToInstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MoveToInstruction.cpp; sourceTree = "<group>"; };
+		E8CF992A18977AA400D3BBDC /* MoveToInstruction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MoveToInstruction.hpp; sourceTree = "<group>"; };
+		E8CF992B18977AA400D3BBDC /* ScaleInstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScaleInstruction.cpp; sourceTree = "<group>"; };
+		E8CF992C18977AA400D3BBDC /* ScaleInstruction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScaleInstruction.hpp; sourceTree = "<group>"; };
+		E8CF992D18977AA400D3BBDC /* SimpleAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleAnimator.cpp; sourceTree = "<group>"; };
+		E8CF992E18977AA400D3BBDC /* SimpleAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleAnimator.hpp; sourceTree = "<group>"; };
+		E8CF992F18977AA400D3BBDC /* WaitInstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaitInstruction.cpp; sourceTree = "<group>"; };
+		E8CF993018977AA400D3BBDC /* WaitInstruction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaitInstruction.hpp; sourceTree = "<group>"; };
+		E8CF993118977AA400D3BBDC /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		E8CF993218977AA400D3BBDC /* Button.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Button.hpp; sourceTree = "<group>"; };
+		E8CF993318977AA400D3BBDC /* ColoredSpriteGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredSpriteGroup.cpp; sourceTree = "<group>"; };
+		E8CF993418977AA400D3BBDC /* ColoredSpriteGroup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ColoredSpriteGroup.hpp; sourceTree = "<group>"; };
+		E8CF993518977AA400D3BBDC /* f_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_common.hpp; sourceTree = "<group>"; };
+		E8CF993618977AA400D3BBDC /* f_debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_debug.hpp; sourceTree = "<group>"; };
+		E8CF993718977AA400D3BBDC /* f_rect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_rect.hpp; sourceTree = "<group>"; };
+		E8CF993818977AA400D3BBDC /* f_sfml_common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = f_sfml_common.cpp; sourceTree = "<group>"; };
+		E8CF993918977AA400D3BBDC /* f_sprites.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_sprites.hpp; sourceTree = "<group>"; };
+		E8CF993A18977AA400D3BBDC /* f_views.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = f_views.hpp; sourceTree = "<group>"; };
+		E8CF993B18977AA400D3BBDC /* iBoundable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = iBoundable.hpp; sourceTree = "<group>"; };
+		E8CF993C18977AA400D3BBDC /* iCenterable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = iCenterable.hpp; sourceTree = "<group>"; };
+		E8CF993D18977AA400D3BBDC /* ManagedText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagedText.cpp; sourceTree = "<group>"; };
+		E8CF993E18977AA400D3BBDC /* ManagedText.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ManagedText.hpp; sourceTree = "<group>"; };
+		E8CF993F18977AA400D3BBDC /* Mouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mouse.cpp; sourceTree = "<group>"; };
+		E8CF994018977AA400D3BBDC /* Mouse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mouse.hpp; sourceTree = "<group>"; };
+		E8CF994118977AA400D3BBDC /* SelectionBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectionBox.cpp; sourceTree = "<group>"; };
+		E8CF994218977AA400D3BBDC /* SelectionBox.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SelectionBox.hpp; sourceTree = "<group>"; };
+		E8CF994318977AA400D3BBDC /* sfml_f_debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sfml_f_debug.cpp; sourceTree = "<group>"; };
+		E8CF994418977AA400D3BBDC /* ShiftButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShiftButton.cpp; sourceTree = "<group>"; };
+		E8CF994518977AA400D3BBDC /* ShiftButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShiftButton.hpp; sourceTree = "<group>"; };
+		E8CF994618977AA400D3BBDC /* SpriteGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteGroup.cpp; sourceTree = "<group>"; };
+		E8CF994718977AA400D3BBDC /* SpriteGroup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpriteGroup.hpp; sourceTree = "<group>"; };
+		E8CF994818977AA400D3BBDC /* SpriteSheet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteSheet.cpp; sourceTree = "<group>"; };
+		E8CF994918977AA400D3BBDC /* SpriteSheet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpriteSheet.hpp; sourceTree = "<group>"; };
+		E8CF994A18977AA400D3BBDC /* TextureRegion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureRegion.cpp; sourceTree = "<group>"; };
+		E8CF994B18977AA400D3BBDC /* TextureRegion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TextureRegion.hpp; sourceTree = "<group>"; };
+		E8CF994C18977AA400D3BBDC /* VertexButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexButton.cpp; sourceTree = "<group>"; };
+		E8CF994D18977AA400D3BBDC /* VertexButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VertexButton.hpp; sourceTree = "<group>"; };
+		E8CF998918977AAF00D3BBDC /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		E8CF998B18977B5400D3BBDC /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		E8CF998C18977B5400D3BBDC /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../../../../../../../Library/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		E8CF998D18977B5400D3BBDC /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../../../../../../../Library/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		E8CF999418977E3500D3BBDC /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		E8CF999518977E3500D3BBDC /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E82A0E391896B508001A1942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CF999318977E3500D3BBDC /* sfml-window.framework in Frameworks */,
+				E8CF999218977E3500D3BBDC /* sfml-system.framework in Frameworks */,
+				E8CF999118977E3500D3BBDC /* sfml-graphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E82A0E331896B508001A1942 = {
+			isa = PBXGroup;
+			children = (
+				E8CF999418977E3500D3BBDC /* sfml-audio.framework */,
+				E8CF999518977E3500D3BBDC /* sfml-network.framework */,
+				E8CF998B18977B5400D3BBDC /* sfml-graphics.framework */,
+				E8CF998C18977B5400D3BBDC /* sfml-system.framework */,
+				E8CF998D18977B5400D3BBDC /* sfml-window.framework */,
+				E82A0E3F1896B508001A1942 /* MemorySquares */,
+				E82A0E3E1896B508001A1942 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E82A0E3E1896B508001A1942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E82A0E3D1896B508001A1942 /* MemorySquares.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E82A0E3F1896B508001A1942 /* MemorySquares */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF98D918977AA400D3BBDC /* game */,
+				E8CF98F618977AA400D3BBDC /* z_framework */,
+				E82A0E421896B508001A1942 /* ResourcePath.mm */,
+				E82A0E441896B508001A1942 /* ResourcePath.hpp */,
+				E82A0E451896B508001A1942 /* main.cpp */,
+				E82A0E471896B508001A1942 /* Resources */,
+				E82A0E401896B508001A1942 /* Supporting Files */,
+			);
+			path = MemorySquares;
+			sourceTree = "<group>";
+		};
+		E82A0E401896B508001A1942 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E82A0E411896B508001A1942 /* MemorySquares-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E82A0E471896B508001A1942 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF998918977AAF00D3BBDC /* data */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E8CF98D918977AA400D3BBDC /* game */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF98DD18977AA400D3BBDC /* Assets.hpp */,
+				E8CF98DE18977AA400D3BBDC /* Constants.cpp */,
+				E8CF98DF18977AA400D3BBDC /* f_assetsloading.cpp */,
+				E8CF98E018977AA400D3BBDC /* Game.cpp */,
+				E8CF98E118977AA400D3BBDC /* Game.hpp */,
+				E8CF98E218977AA400D3BBDC /* logic */,
+				E8CF98EB18977AA400D3BBDC /* screens */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		E8CF98E218977AA400D3BBDC /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF98E718977AA400D3BBDC /* Board.cpp */,
+				E8CF98E818977AA400D3BBDC /* Board.hpp */,
+				E8CF98E918977AA400D3BBDC /* Tile.cpp */,
+				E8CF98EA18977AA400D3BBDC /* Tile.hpp */,
+			);
+			path = logic;
+			sourceTree = "<group>";
+		};
+		E8CF98EB18977AA400D3BBDC /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF98F018977AA400D3BBDC /* GameScreen.cpp */,
+				E8CF98F118977AA400D3BBDC /* GameScreen.hpp */,
+				E8CF98F218977AA400D3BBDC /* MainScreen.cpp */,
+				E8CF98F318977AA400D3BBDC /* MainScreen.hpp */,
+				E8CF98F418977AA400D3BBDC /* Screen.cpp */,
+				E8CF98F518977AA400D3BBDC /* Screen.hpp */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		E8CF98F618977AA400D3BBDC /* z_framework */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF98F718977AA400D3BBDC /* Makefile */,
+				E8CF98F818977AA400D3BBDC /* README */,
+				E8CF98F918977AA400D3BBDC /* zf_common */,
+				E8CF991218977AA400D3BBDC /* zf_sfml */,
+			);
+			path = z_framework;
+			sourceTree = "<group>";
+		};
+		E8CF98F918977AA400D3BBDC /* zf_common */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF98FA18977AA400D3BBDC /* .f_common.hpp.swp */,
+				E8CF98FB18977AA400D3BBDC /* Alignment.hpp */,
+				E8CF98FC18977AA400D3BBDC /* common_f_debug.cpp */,
+				E8CF98FD18977AA400D3BBDC /* debugging.cpp */,
+				E8CF98FE18977AA400D3BBDC /* debugging.hpp */,
+				E8CF98FF18977AA400D3BBDC /* Direction.cpp */,
+				E8CF990018977AA400D3BBDC /* Direction.hpp */,
+				E8CF990118977AA400D3BBDC /* f_common.hpp */,
+				E8CF990218977AA400D3BBDC /* f_common_common.cpp */,
+				E8CF990318977AA400D3BBDC /* f_conversion.cpp */,
+				E8CF990418977AA400D3BBDC /* f_conversion.hpp */,
+				E8CF990518977AA400D3BBDC /* f_debug.hpp */,
+				E8CF990618977AA400D3BBDC /* f_inputs.hpp */,
+				E8CF990718977AA400D3BBDC /* Grid.cpp */,
+				E8CF990818977AA400D3BBDC /* Grid.hpp */,
+				E8CF990918977AA400D3BBDC /* InputState.cpp */,
+				E8CF990A18977AA400D3BBDC /* InputState.hpp */,
+				E8CF990B18977AA400D3BBDC /* Probability.cpp */,
+				E8CF990C18977AA400D3BBDC /* Probability.hpp */,
+				E8CF990D18977AA400D3BBDC /* Range.cpp */,
+				E8CF990E18977AA400D3BBDC /* Range.hpp */,
+				E8CF990F18977AA400D3BBDC /* Route.cpp */,
+				E8CF991018977AA400D3BBDC /* Route.hpp */,
+				E8CF991118977AA400D3BBDC /* TwoDSpace.hpp */,
+			);
+			path = zf_common;
+			sourceTree = "<group>";
+		};
+		E8CF991218977AA400D3BBDC /* zf_sfml */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF991318977AA400D3BBDC /* .f_common.hpp.swp */,
+				E8CF991418977AA400D3BBDC /* .VertexButton.hpp.swp */,
+				E8CF991518977AA400D3BBDC /* AlignmentData.cpp */,
+				E8CF991618977AA400D3BBDC /* AlignmentData.hpp */,
+				E8CF991718977AA400D3BBDC /* animations */,
+				E8CF993118977AA400D3BBDC /* Button.cpp */,
+				E8CF993218977AA400D3BBDC /* Button.hpp */,
+				E8CF993318977AA400D3BBDC /* ColoredSpriteGroup.cpp */,
+				E8CF993418977AA400D3BBDC /* ColoredSpriteGroup.hpp */,
+				E8CF993518977AA400D3BBDC /* f_common.hpp */,
+				E8CF993618977AA400D3BBDC /* f_debug.hpp */,
+				E8CF993718977AA400D3BBDC /* f_rect.hpp */,
+				E8CF993818977AA400D3BBDC /* f_sfml_common.cpp */,
+				E8CF993918977AA400D3BBDC /* f_sprites.hpp */,
+				E8CF993A18977AA400D3BBDC /* f_views.hpp */,
+				E8CF993B18977AA400D3BBDC /* iBoundable.hpp */,
+				E8CF993C18977AA400D3BBDC /* iCenterable.hpp */,
+				E8CF993D18977AA400D3BBDC /* ManagedText.cpp */,
+				E8CF993E18977AA400D3BBDC /* ManagedText.hpp */,
+				E8CF993F18977AA400D3BBDC /* Mouse.cpp */,
+				E8CF994018977AA400D3BBDC /* Mouse.hpp */,
+				E8CF994118977AA400D3BBDC /* SelectionBox.cpp */,
+				E8CF994218977AA400D3BBDC /* SelectionBox.hpp */,
+				E8CF994318977AA400D3BBDC /* sfml_f_debug.cpp */,
+				E8CF994418977AA400D3BBDC /* ShiftButton.cpp */,
+				E8CF994518977AA400D3BBDC /* ShiftButton.hpp */,
+				E8CF994618977AA400D3BBDC /* SpriteGroup.cpp */,
+				E8CF994718977AA400D3BBDC /* SpriteGroup.hpp */,
+				E8CF994818977AA400D3BBDC /* SpriteSheet.cpp */,
+				E8CF994918977AA400D3BBDC /* SpriteSheet.hpp */,
+				E8CF994A18977AA400D3BBDC /* TextureRegion.cpp */,
+				E8CF994B18977AA400D3BBDC /* TextureRegion.hpp */,
+				E8CF994C18977AA400D3BBDC /* VertexButton.cpp */,
+				E8CF994D18977AA400D3BBDC /* VertexButton.hpp */,
+			);
+			path = zf_sfml;
+			sourceTree = "<group>";
+		};
+		E8CF991718977AA400D3BBDC /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF991818977AA400D3BBDC /* .AnimationComponent.cpp.swp */,
+				E8CF991918977AA400D3BBDC /* .AnimationComponent.hpp.swp */,
+				E8CF991A18977AA400D3BBDC /* AnimatableSprite.cpp */,
+				E8CF991B18977AA400D3BBDC /* AnimatableSprite.hpp */,
+				E8CF991C18977AA400D3BBDC /* AnimationComponent.cpp */,
+				E8CF991D18977AA400D3BBDC /* AnimationComponent.hpp */,
+				E8CF991E18977AA400D3BBDC /* AnimationInstruction.cpp */,
+				E8CF991F18977AA400D3BBDC /* AnimationInstruction.hpp */,
+				E8CF992018977AA400D3BBDC /* CompositeInstruction.cpp */,
+				E8CF992118977AA400D3BBDC /* CompositeInstruction.hpp */,
+				E8CF992218977AA400D3BBDC /* EffectFactory.hpp */,
+				E8CF992318977AA400D3BBDC /* FadeInstruction.cpp */,
+				E8CF992418977AA400D3BBDC /* FadeInstruction.hpp */,
+				E8CF992518977AA400D3BBDC /* iAnimatable.hpp */,
+				E8CF992618977AA400D3BBDC /* iAnimationComponentWrapper.hpp */,
+				E8CF992718977AA400D3BBDC /* MoveInstruction.cpp */,
+				E8CF992818977AA400D3BBDC /* MoveInstruction.hpp */,
+				E8CF992918977AA400D3BBDC /* MoveToInstruction.cpp */,
+				E8CF992A18977AA400D3BBDC /* MoveToInstruction.hpp */,
+				E8CF992B18977AA400D3BBDC /* ScaleInstruction.cpp */,
+				E8CF992C18977AA400D3BBDC /* ScaleInstruction.hpp */,
+				E8CF992D18977AA400D3BBDC /* SimpleAnimator.cpp */,
+				E8CF992E18977AA400D3BBDC /* SimpleAnimator.hpp */,
+				E8CF992F18977AA400D3BBDC /* WaitInstruction.cpp */,
+				E8CF993018977AA400D3BBDC /* WaitInstruction.hpp */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E82A0E3C1896B508001A1942 /* MemorySquares */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82A0E521896B508001A1942 /* Build configuration list for PBXNativeTarget "MemorySquares" */;
+			buildPhases = (
+				E82A0E381896B508001A1942 /* Sources */,
+				E82A0E391896B508001A1942 /* Frameworks */,
+				E82A0E3A1896B508001A1942 /* Resources */,
+				E82A0E3B1896B508001A1942 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemorySquares;
+			productName = MemorySquares;
+			productReference = E82A0E3D1896B508001A1942 /* MemorySquares.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E82A0E341896B508001A1942 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ZwodahS;
+			};
+			buildConfigurationList = E82A0E371896B508001A1942 /* Build configuration list for PBXProject "MemorySquares" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E82A0E331896B508001A1942;
+			productRefGroup = E82A0E3E1896B508001A1942 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E82A0E3C1896B508001A1942 /* MemorySquares */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E82A0E3A1896B508001A1942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CF998A18977AAF00D3BBDC /* data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E82A0E3B1896B508001A1942 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required sfml dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# Are we building a project that uses framework or dylibs ?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert : not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $1 is a path\n{\n    test $# -eq 1\n    assert $? \"force_remove() requires one parameter\"\n    rm -fr \"$1\"\n    assert $? \"couldn't remove $1\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Frameworks\"\n    \n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1.2.dylib\"\n        force_remove \"$dest/libsfml-$1-d.2.dylib\"\n        force_remove \"$dest/sfml-$1.framework\"\n    \n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            copy \"/Library/Frameworks/sfml-$1.framework\" \"$dest/sfml-$1.framework\"\n        elif [ $CONFIGURATION = \"Debug\" ] && [ $SFML_LINK_DYLIBS_SUFFIX_DEBUG != \"\" ]\n        then\n            copy \"/usr/local/lib/libsfml-$1-d.2.dylib\" \"$dest/libsfml-$1-d.2.dylib\"\n        else\n            copy \"/usr/local/lib/libsfml-$1.2.dylib\" \"$dest/libsfml-$1.2.dylib\"\n        fi\n        \n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy sndfile framework too\n            copy \"/Library/Frameworks/sndfile.framework\" \"$dest/sndfile.framework\"\n        fi\n\n        if [ \"$1\" = \"graphics\" ]\n        then\n            # copy freetype framework too\n            copy \"/Library/Frameworks/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E82A0E381896B508001A1942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CF995818977AA400D3BBDC /* Board.cpp in Sources */,
+				E8CF995E18977AA400D3BBDC /* GameScreen.cpp in Sources */,
+				E82A0E461896B508001A1942 /* main.cpp in Sources */,
+				E8CF996118977AA400D3BBDC /* Makefile in Sources */,
+				E8CF997618977AA400D3BBDC /* CompositeInstruction.cpp in Sources */,
+				E8CF996918977AA400D3BBDC /* Grid.cpp in Sources */,
+				E8CF998718977AA400D3BBDC /* TextureRegion.cpp in Sources */,
+				E8CF998618977AA400D3BBDC /* SpriteSheet.cpp in Sources */,
+				E8CF996B18977AA400D3BBDC /* Probability.cpp in Sources */,
+				E8CF995118977AA400D3BBDC /* Constants.cpp in Sources */,
+				E8CF996A18977AA400D3BBDC /* InputState.cpp in Sources */,
+				E8CF995218977AA400D3BBDC /* f_assetsloading.cpp in Sources */,
+				E8CF996018977AA400D3BBDC /* Screen.cpp in Sources */,
+				E8CF997718977AA400D3BBDC /* FadeInstruction.cpp in Sources */,
+				E8CF998318977AA400D3BBDC /* sfml_f_debug.cpp in Sources */,
+				E8CF996D18977AA400D3BBDC /* Route.cpp in Sources */,
+				E8CF997818977AA400D3BBDC /* MoveInstruction.cpp in Sources */,
+				E8CF997518977AA400D3BBDC /* AnimationInstruction.cpp in Sources */,
+				E8CF997018977AA400D3BBDC /* AlignmentData.cpp in Sources */,
+				E82A0E431896B508001A1942 /* ResourcePath.mm in Sources */,
+				E8CF997E18977AA400D3BBDC /* ColoredSpriteGroup.cpp in Sources */,
+				E8CF998018977AA400D3BBDC /* ManagedText.cpp in Sources */,
+				E8CF998118977AA400D3BBDC /* Mouse.cpp in Sources */,
+				E8CF997318977AA400D3BBDC /* AnimatableSprite.cpp in Sources */,
+				E8CF996C18977AA400D3BBDC /* Range.cpp in Sources */,
+				E8CF996518977AA400D3BBDC /* debugging.cpp in Sources */,
+				E8CF997D18977AA400D3BBDC /* Button.cpp in Sources */,
+				E8CF998218977AA400D3BBDC /* SelectionBox.cpp in Sources */,
+				E8CF995318977AA400D3BBDC /* Game.cpp in Sources */,
+				E8CF995F18977AA400D3BBDC /* MainScreen.cpp in Sources */,
+				E8CF997418977AA400D3BBDC /* AnimationComponent.cpp in Sources */,
+				E8CF997B18977AA400D3BBDC /* SimpleAnimator.cpp in Sources */,
+				E8CF997A18977AA400D3BBDC /* ScaleInstruction.cpp in Sources */,
+				E8CF997918977AA400D3BBDC /* MoveToInstruction.cpp in Sources */,
+				E8CF996618977AA400D3BBDC /* Direction.cpp in Sources */,
+				E8CF998518977AA400D3BBDC /* SpriteGroup.cpp in Sources */,
+				E8CF997C18977AA400D3BBDC /* WaitInstruction.cpp in Sources */,
+				E8CF998418977AA400D3BBDC /* ShiftButton.cpp in Sources */,
+				E8CF996818977AA400D3BBDC /* f_conversion.cpp in Sources */,
+				E8CF998818977AA400D3BBDC /* VertexButton.cpp in Sources */,
+				E8CF996718977AA400D3BBDC /* f_common_common.cpp in Sources */,
+				E8CF995918977AA400D3BBDC /* Tile.cpp in Sources */,
+				E8CF997F18977AA400D3BBDC /* f_sfml_common.cpp in Sources */,
+				E8CF996418977AA400D3BBDC /* common_f_debug.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E82A0E501896B508001A1942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		E82A0E511896B508001A1942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		E82A0E531896B508001A1942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					APPBUNDLE,
+				);
+				INFOPLIST_FILE = "MemorySquares/MemorySquares-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E82A0E541896B508001A1942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = APPBUNDLE;
+				INFOPLIST_FILE = "MemorySquares/MemorySquares-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E82A0E371896B508001A1942 /* Build configuration list for PBXProject "MemorySquares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82A0E501896B508001A1942 /* Debug */,
+				E82A0E511896B508001A1942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E82A0E521896B508001A1942 /* Build configuration list for PBXNativeTarget "MemorySquares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82A0E531896B508001A1942 /* Debug */,
+				E82A0E541896B508001A1942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E82A0E341896B508001A1942 /* Project object */;
+}
