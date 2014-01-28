@@ -35,7 +35,7 @@ namespace zf
         VertexButton();
         ~VertexButton();
         VertexButton(sf::Color borderColor, sf::Color backgroundColor, sf::FloatRect bound, sf::Text text);
-        VertexButton(const sf::Text& text, const float& width, const float& height, const sf::Color& borderColor, const sf::Color& baseColor, const sf::Color& hoveredColor, const sf::Color& selectedColor, const sf::Color& disabledColor);
+        VertexButton(const sf::Text& text, const float& width, const float& height, const sf::Color& borderColor = sf::Color::White, const sf::Color& baseColor = sf::Color(100, 100, 100), const sf::Color& hoveredColor = sf::Color(150, 150, 100), const sf::Color& selectedColor = sf::Color(150, 150, 100), const sf::Color& disabledColor = sf::Color(20, 20, 20));
         // deprecated
         void draw(sf::RenderWindow& window, const sf::Time& delta);
         void draw(sf::RenderWindow& window);

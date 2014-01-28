@@ -1,5 +1,6 @@
 #include "Board.hpp"
 #include "Tile.hpp"
+#include "../Game.hpp"
 #include "../../z_framework/zf_sfml/f_common.hpp"
 #include <cstdlib>
 const float Board::Show_Duration = 2.0f;
@@ -68,6 +69,7 @@ void Board::update(sf::RenderWindow& window, const sf::Time& delta)
         case State_Moving : update_stateMoving(window, delta); break;
         case State_Solving : update_stateSolving(window, delta); break;
         case State_Solved : update_stateSolved(window, delta); break;
+        case State_GameOver : break;
     }
 }
 
@@ -118,6 +120,11 @@ void Board::update_stateHidden(sf::RenderWindow& window, const sf::Time& delta)
         _state = State_Moving;
         _moveCounter++;
     }
+    else
+    {
+        _state = State_Solving;
+        _currentRequired = 1;
+    }
 }
 
 void Board::update_stateMoving(sf::RenderWindow& window, const sf::Time& delta)
@@ -145,6 +152,9 @@ void Board::update_stateSolving(sf::RenderWindow& window, const sf::Time& delta)
 
 void Board::update_stateSolved(sf::RenderWindow& window, const sf::Time& delta)
 {
+    _showTimer = Show_Duration;
+    _state = State_Showing;
+    _currentLevel++;
 }
 
 
@@ -155,21 +165,21 @@ sf::Vector2f Board::getTilePosition(const int& row, const int& col)
 
 void Board::startGame()
 {
-    if(_state != State_Init)
-    {
-        return;
-    }
     _state = State_Showing;
     _showTimer = Show_Duration;
     _moveCounter = 0;
-    _currentLevel = 10;
+    _currentLevel = 1;
+    _currentRequired = 1;
+    _score = 0;
     int i = 1;
     for(zf::TwoDSpace<Tile*>::Iterator it = _tiles.iteratesColRow() ; !it.end() ; ++it)
     {
         (*it.get()).setIntValue(i);
+        (*it.get()).instantReveal();
         i++;
     }
 }
+
 
 void Board::shift(int rowOrCol, int rowColNum, int inOrOut)
 {
@@ -243,4 +253,51 @@ void Board::shift(int rowOrCol, int rowColNum, int inOrOut)
             _tiles.get(0, rowColNum)->moveTo(getTilePosition(0, rowColNum));
         }
     }
+}
+
+bool Board::click(const sf::Vector2f& position)
+{
+    if(_state != State_Solving)
+    {
+        return false;
+    }
+    Tile* tile = 0;
+    for(zf::TwoDSpace<Tile*>::Iterator it = _tiles.iteratesColRow(); !it.end(); ++it)
+    {
+        if((*it.get()).contains(position))
+        {
+            tile = it.get();
+            break;
+        }
+    }
+    if(tile != 0)
+    {
+        tile->reveal();
+        int value = tile->getValue();
+        if(value == _currentRequired)
+        {
+            _score++;
+            _currentRequired++;
+            if(_currentRequired == 10)
+            {
+                _state = State_Solved;
+            }
+        }
+        else
+        {
+            _state = State_GameOver;
+        }
+        return true;
+    }
+    return false;
+}
+
+bool Board::isGameOver()
+{
+    return _state == State_GameOver;
+}
+
+int Board::getScore()
+{
+    return _score;
 }

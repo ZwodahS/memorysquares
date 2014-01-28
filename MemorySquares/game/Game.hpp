@@ -27,12 +27,12 @@ class Game
 
         // from mainscreen
         void startGame();
-        void loadGame();
         void exitGame();
 
         // from gamescreen
         void exitToMainScreen();
 
+        void quit();
     private:
         void update(sf::Time delta);
         void draw(sf::Time delta);

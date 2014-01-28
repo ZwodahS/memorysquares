@@ -5,7 +5,7 @@
 Tile::Tile(Game& game, int value)
     : _game(game), _value(value), _position(0, 0)
     , _number(zf::toString(value), game.assets.font_main, 24, sf::Color::White)
-    , _animation(*this), _state(State_Revealed)
+    , _animation(*this), _state(State_Revealed), _bound(0, 0, 96, 96)
 {
     _border = zf::toVertexArrayLinesStrip(sf::FloatRect(0, 0, 96, 96));
     _bg = zf::toVertexArrayQuads(sf::FloatRect(0, 0, 96, 96));
@@ -51,6 +51,8 @@ void Tile::setPosition(const sf::Vector2f& position)
     zf::setPosition(_border, position);
     zf::setPosition(_bg, position);
     _number.setPosition(position);
+    _bound.left = position.x;
+    _bound.top = position.y;
 }
 
 void Tile::setAlpha(const float& alpha)
@@ -101,9 +103,22 @@ void Tile::instantHide()
 {
     _state = State_Hidden;
     _number.setAlpha(0);
+    _animation.stopAll();
+}
+
+void Tile::instantReveal()
+{
+    _state = State_Revealed;
+    _number.setAlpha(255);
+    _animation.stopAll();
 }
 
 void Tile::moveTo(const sf::Vector2f& position, const float& duration)
 {
     _animation.moveTo(_position, position, duration);
+}
+
+bool Tile::contains(const sf::Vector2f& position)
+{
+    return _bound.contains(position);
 }

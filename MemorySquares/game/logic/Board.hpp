@@ -17,6 +17,12 @@ public:
     sf::Vector2f getTilePosition(const int& row, const int& col);
 
     void startGame();
+
+    // return true if click reveal a tile. 
+    bool click(const sf::Vector2f& position);
+    bool isGameOver();
+
+    int getScore();
 private:
     Game& _game;
     sf::Vector2f _position;
@@ -32,6 +38,7 @@ private:
         State_Moving, // moving the squares around,
         State_Solving,
         State_Solved,
+        State_GameOver,
     } _state;
     int _currentLevel;
     int _moveCounter;
@@ -50,5 +57,8 @@ private:
     void shift(int rowOrCol, int rowColNum, int inOrOut);
 
     sf::VertexArray _cover;
+
+    int _currentRequired;
+    int _score;
 };
 #endif

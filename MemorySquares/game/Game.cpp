@@ -5,7 +5,7 @@
 #include "../ResourcePath.hpp"
 #include <SFML/Graphics.hpp>
 #define CLEAR_COLOR sf::Color(20,20,20,255)
-#define GAME_TITLE "Game Name"
+#define GAME_TITLE "Memory Squares"
 
 
 Game::Game()
@@ -108,11 +108,6 @@ void Game::startGame()
     _nextScreen = gs;
 }
 
-void Game::loadGame()
-{
-    _currentScreen->screenExit();
-}
-
 void Game::exitGame()
 {
     _currentScreen->screenExit();
@@ -125,3 +120,4 @@ void Game::exitToMainScreen()
     MainScreen* ms = new MainScreen(*this);
     _nextScreen = ms;
 }
+

@@ -14,6 +14,7 @@ public:
 
     void draw(sf::RenderWindow& window);
     void update(sf::RenderWindow& window, const sf::Time& delta);
+    bool contains(const sf::Vector2f& position);
 
     void setPosition(const sf::Vector2f& position);
     void setAlpha(const float& alpha);
@@ -28,10 +29,12 @@ public:
     void reveal();
     void hide();
     void instantHide();
+    void instantReveal();
 private:
     Game& _game;
     int _value;
     
+    sf::FloatRect _bound;
     sf::Vector2f _position;
     sf::VertexArray _border;
     sf::VertexArray _bg;

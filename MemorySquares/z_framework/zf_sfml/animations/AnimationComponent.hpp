@@ -58,6 +58,7 @@ namespace zf
         bool composite(CompositeInstruction& instruction);
 
         bool isAnimating() const;
+        void stopAll();
     private:
         iAnimatable& _animatable;
         AnimationInstruction* _instruction;

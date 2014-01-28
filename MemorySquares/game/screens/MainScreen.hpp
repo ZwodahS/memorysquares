@@ -8,7 +8,6 @@ class MainScreen : public Screen
 public :
     static const sf::Vector2f Button_Size;
     static const sf::FloatRect Start_Button_Bound;
-    static const sf::FloatRect Load_Button_Bound;
     static const sf::FloatRect Exit_Button_Bound;
     static const sf::FloatRect Previous_Button_Bound;
     static const sf::FloatRect Next_Button_Bound;
@@ -33,13 +32,16 @@ public :
 private:
 
     zf::VertexButton _startButton;
-    zf::VertexButton _loadButton;
     zf::VertexButton _exitButton;
 
     sf::Vector2f _mouseDownPosition;
 
+    zf::ManagedText _nameText;
+    sf::Text _nameSquare;
+    zf::ManagedText _helpText1;
+    zf::ManagedText _helpText2;
+
     void buttonclick_startGame();
-    void buttonclick_loadGame();
     void buttonclick_exitGame();
 
 };

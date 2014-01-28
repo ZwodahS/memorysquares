@@ -98,4 +98,10 @@ namespace zf
     {
         return _instruction != 0 ;
     }
+
+    void AnimationComponent::stopAll()
+    {
+        delete _instruction;
+        _instruction = 0;
+    }
 }
