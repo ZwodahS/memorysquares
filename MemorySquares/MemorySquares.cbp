@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MemorySquares" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MemorySquares" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="C:\lib\SFML-2.0\lib\libsfml-graphics.a" />
+					<Add library="C:\lib\SFML-2.0\lib\libsfml-system.a" />
+					<Add library="C:\lib\SFML-2.0\lib\libsfml-window.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MemorySquares" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="C:\lib\SFML-2.0\lib\libsfml-graphics.a" />
+					<Add library="C:\lib\SFML-2.0\lib\libsfml-system.a" />
+					<Add library="C:\lib\SFML-2.0\lib\libsfml-window.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="ResourcePath.hpp" />
+		<Unit filename="game/Assets.hpp" />
+		<Unit filename="game/Constants.cpp" />
+		<Unit filename="game/Game.cpp" />
+		<Unit filename="game/Game.hpp" />
+		<Unit filename="game/f_assetsloading.cpp" />
+		<Unit filename="game/logic/Board.cpp" />
+		<Unit filename="game/logic/Board.hpp" />
+		<Unit filename="game/logic/Tile.cpp" />
+		<Unit filename="game/logic/Tile.hpp" />
+		<Unit filename="game/screens/GameScreen.cpp" />
+		<Unit filename="game/screens/GameScreen.hpp" />
+		<Unit filename="game/screens/MainScreen.cpp" />
+		<Unit filename="game/screens/MainScreen.hpp" />
+		<Unit filename="game/screens/Screen.cpp" />
+		<Unit filename="game/screens/Screen.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="z_framework/zf_common/Alignment.hpp" />
+		<Unit filename="z_framework/zf_common/Direction.cpp" />
+		<Unit filename="z_framework/zf_common/Direction.hpp" />
+		<Unit filename="z_framework/zf_common/Grid.cpp" />
+		<Unit filename="z_framework/zf_common/Grid.hpp" />
+		<Unit filename="z_framework/zf_common/InputState.cpp" />
+		<Unit filename="z_framework/zf_common/InputState.hpp" />
+		<Unit filename="z_framework/zf_common/Probability.cpp" />
+		<Unit filename="z_framework/zf_common/Probability.hpp" />
+		<Unit filename="z_framework/zf_common/Range.cpp" />
+		<Unit filename="z_framework/zf_common/Range.hpp" />
+		<Unit filename="z_framework/zf_common/Route.cpp" />
+		<Unit filename="z_framework/zf_common/Route.hpp" />
+		<Unit filename="z_framework/zf_common/TwoDSpace.hpp" />
+		<Unit filename="z_framework/zf_common/common_f_debug.cpp" />
+		<Unit filename="z_framework/zf_common/debugging.cpp" />
+		<Unit filename="z_framework/zf_common/debugging.hpp" />
+		<Unit filename="z_framework/zf_common/f_common.hpp" />
+		<Unit filename="z_framework/zf_common/f_common_common.cpp" />
+		<Unit filename="z_framework/zf_common/f_conversion.cpp" />
+		<Unit filename="z_framework/zf_common/f_conversion.hpp" />
+		<Unit filename="z_framework/zf_common/f_debug.hpp" />
+		<Unit filename="z_framework/zf_common/f_inputs.hpp" />
+		<Unit filename="z_framework/zf_sfml/AlignmentData.cpp" />
+		<Unit filename="z_framework/zf_sfml/AlignmentData.hpp" />
+		<Unit filename="z_framework/zf_sfml/Button.cpp" />
+		<Unit filename="z_framework/zf_sfml/Button.hpp" />
+		<Unit filename="z_framework/zf_sfml/ColoredSpriteGroup.cpp" />
+		<Unit filename="z_framework/zf_sfml/ColoredSpriteGroup.hpp" />
+		<Unit filename="z_framework/zf_sfml/ManagedText.cpp" />
+		<Unit filename="z_framework/zf_sfml/ManagedText.hpp" />
+		<Unit filename="z_framework/zf_sfml/Mouse.cpp" />
+		<Unit filename="z_framework/zf_sfml/Mouse.hpp" />
+		<Unit filename="z_framework/zf_sfml/SelectionBox.cpp" />
+		<Unit filename="z_framework/zf_sfml/SelectionBox.hpp" />
+		<Unit filename="z_framework/zf_sfml/ShiftButton.cpp" />
+		<Unit filename="z_framework/zf_sfml/ShiftButton.hpp" />
+		<Unit filename="z_framework/zf_sfml/SpriteGroup.cpp" />
+		<Unit filename="z_framework/zf_sfml/SpriteGroup.hpp" />
+		<Unit filename="z_framework/zf_sfml/SpriteSheet.cpp" />
+		<Unit filename="z_framework/zf_sfml/SpriteSheet.hpp" />
+		<Unit filename="z_framework/zf_sfml/TextureRegion.cpp" />
+		<Unit filename="z_framework/zf_sfml/TextureRegion.hpp" />
+		<Unit filename="z_framework/zf_sfml/VertexButton.cpp" />
+		<Unit filename="z_framework/zf_sfml/VertexButton.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/AnimatableSprite.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/AnimatableSprite.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/AnimationComponent.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/AnimationComponent.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/AnimationInstruction.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/AnimationInstruction.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/CompositeInstruction.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/CompositeInstruction.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/EffectFactory.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/FadeInstruction.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/FadeInstruction.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/MoveInstruction.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/MoveInstruction.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/MoveToInstruction.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/MoveToInstruction.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/ScaleInstruction.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/ScaleInstruction.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/SimpleAnimator.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/SimpleAnimator.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/WaitInstruction.cpp" />
+		<Unit filename="z_framework/zf_sfml/animations/WaitInstruction.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/iAnimatable.hpp" />
+		<Unit filename="z_framework/zf_sfml/animations/iAnimationComponentWrapper.hpp" />
+		<Unit filename="z_framework/zf_sfml/f_common.hpp" />
+		<Unit filename="z_framework/zf_sfml/f_debug.hpp" />
+		<Unit filename="z_framework/zf_sfml/f_rect.hpp" />
+		<Unit filename="z_framework/zf_sfml/f_sfml_common.cpp" />
+		<Unit filename="z_framework/zf_sfml/f_sprites.hpp" />
+		<Unit filename="z_framework/zf_sfml/f_views.hpp" />
+		<Unit filename="z_framework/zf_sfml/iBoundable.hpp" />
+		<Unit filename="z_framework/zf_sfml/iCenterable.hpp" />
+		<Unit filename="z_framework/zf_sfml/sfml_f_debug.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

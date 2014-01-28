@@ -1,0 +1,376 @@
+# depslib dependency file v1.0
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\constants.cpp
+	"Game.hpp"
+	"screens/MainScreen.hpp"
+	"screens/GameScreen.hpp"
+	"../z_framework/zf_sfml/f_common.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\game\game.hpp
+	"Assets.hpp"
+	"../z_framework/zf_sfml/Mouse.hpp"
+	<SFML/Graphics.hpp>
+	<string>
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\game\assets.hpp
+	<SFML/Graphics.hpp>
+	"../z_framework/zf_sfml/SpriteSheet.hpp"
+	"../z_framework/zf_sfml/TextureRegion.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\spritesheet.hpp
+	"TextureRegion.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\textureregion.hpp
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\mouse.hpp
+	"../zf_common/InputState.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\inputstate.hpp
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\game\screens\mainscreen.hpp
+	"Screen.hpp"
+	"../../z_framework/zf_sfml/VertexButton.hpp"
+	"../../z_framework/zf_sfml/ManagedText.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\game\screens\screen.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Network.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\vertexbutton.hpp
+	"Mouse.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\managedtext.hpp
+	<SFML/Graphics.hpp>
+	"AlignmentData.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\alignmentdata.hpp
+	"../zf_common/Alignment.hpp"
+	<SFML/System.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\alignment.hpp
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\game\screens\gamescreen.hpp
+	"Screen.hpp"
+	"../logic/Board.hpp"
+	"../../z_framework/zf_sfml/ManagedText.hpp"
+	"../../z_framework/zf_sfml/VertexButton.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\game\logic\board.hpp
+	"../../z_framework/zf_common/TwoDSpace.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\twodspace.hpp
+	"Grid.hpp"
+	<vector>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\grid.hpp
+	<cmath>
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\f_common.hpp
+	"AlignmentData.hpp"
+	"iBoundable.hpp"
+	"../zf_common/Grid.hpp"
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\iboundable.hpp
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\f_assetsloading.cpp
+	"Game.hpp"
+	"../ResourcePath.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\resourcepath.hpp
+	<string>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\game.cpp
+	"Game.hpp"
+	"screens/Screen.hpp"
+	"screens/MainScreen.hpp"
+	"screens/GameScreen.hpp"
+	"../ResourcePath.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\logic\board.cpp
+	"Board.hpp"
+	"Tile.hpp"
+	"../Game.hpp"
+	"../../z_framework/zf_sfml/f_common.hpp"
+	<cstdlib>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\game\logic\tile.hpp
+	"../../z_framework/zf_sfml/ManagedText.hpp"
+	"../../z_framework/zf_sfml/animations/iAnimatable.hpp"
+	"../../z_framework/zf_sfml/animations/AnimationComponent.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\ianimatable.hpp
+	<SFML/Graphics.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\animationcomponent.hpp
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\logic\tile.cpp
+	"Tile.hpp"
+	"../Game.hpp"
+	"../../z_framework/zf_sfml/f_common.hpp"
+	"../../z_framework/zf_common/f_conversion.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\f_conversion.hpp
+	<iostream>
+	<sstream>
+	<vector>
+	<string>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\screens\gamescreen.cpp
+	"GameScreen.hpp"
+	"../Game.hpp"
+	"../../z_framework/zf_common/f_conversion.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\screens\mainscreen.cpp
+	"MainScreen.hpp"
+	"../Game.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\game\screens\screen.cpp
+	"Screen.hpp"
+	"../Game.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\main.cpp
+	<stdlib.h>
+	<time.h>
+	"game/Game.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\common_f_debug.cpp
+	"f_debug.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\f_debug.hpp
+	"Grid.hpp"
+	<iostream>
+	<string>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\debugging.cpp
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\direction.cpp
+	"Direction.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\direction.hpp
+	"Grid.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\f_common_common.cpp
+	"f_common.hpp"
+	"f_conversion.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\f_common.hpp
+	<vector>
+	<string>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\f_conversion.cpp
+	"f_conversion.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\grid.cpp
+	"Grid.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\inputstate.cpp
+	"InputState.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\probability.cpp
+	"Probability.hpp"
+	<stdlib.h>
+	<math.h>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\probability.hpp
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\range.cpp
+	"Range.hpp"
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\range.hpp
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\route.cpp
+	"Route.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\route.hpp
+	"Grid.hpp"
+	<vector>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\alignmentdata.cpp
+	"AlignmentData.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\animatablesprite.cpp
+	"AnimatableSprite.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\animatablesprite.hpp
+	<SFML/Graphics.hpp>
+	"AnimationComponent.hpp"
+	"iAnimatable.hpp"
+	"iAnimationComponentWrapper.hpp"
+	"../iCenterable.hpp"
+	"../iBoundable.hpp"
+	"../f_common.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\ianimationcomponentwrapper.hpp
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\icenterable.hpp
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\animationcomponent.cpp
+	"AnimationComponent.hpp"
+	"iAnimatable.hpp"
+	"AnimationInstruction.hpp"
+	"FadeInstruction.hpp"
+	"MoveToInstruction.hpp"
+	"MoveInstruction.hpp"
+	"CompositeInstruction.hpp"
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\animationinstruction.hpp
+	<SFML/Graphics.hpp>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\fadeinstruction.hpp
+	"AnimationInstruction.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\movetoinstruction.hpp
+	"AnimationInstruction.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\moveinstruction.hpp
+	"AnimationInstruction.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\compositeinstruction.hpp
+	"AnimationInstruction.hpp"
+	<vector>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\animationinstruction.cpp
+	"AnimationInstruction.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\compositeinstruction.cpp
+	"CompositeInstruction.hpp"
+	"FadeInstruction.hpp"
+	"MoveToInstruction.hpp"
+	"MoveInstruction.hpp"
+	"WaitInstruction.hpp"
+	"ScaleInstruction.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\waitinstruction.hpp
+	"AnimationInstruction.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\scaleinstruction.hpp
+	"AnimationInstruction.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\fadeinstruction.cpp
+	"FadeInstruction.hpp"
+	"iAnimatable.hpp"
+	<iostream>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\moveinstruction.cpp
+	"MoveInstruction.hpp"
+	"iAnimatable.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\movetoinstruction.cpp
+	"MoveToInstruction.hpp"
+	"iAnimatable.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\scaleinstruction.cpp
+	"ScaleInstruction.hpp"
+	"iAnimatable.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\simpleanimator.cpp
+	"SimpleAnimator.hpp"
+	"FadeInstruction.hpp"
+	"MoveToInstruction.hpp"
+	"MoveInstruction.hpp"
+	"WaitInstruction.hpp"
+	"CompositeInstruction.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\simpleanimator.hpp
+	"iAnimatable.hpp"
+	<SFML/Graphics.hpp>
+	<vector>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\animations\waitinstruction.cpp
+	"WaitInstruction.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\button.cpp
+	"Button.hpp"
+	"f_common.hpp"
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\button.hpp
+	"AlignmentData.hpp"
+	"../zf_common/Alignment.hpp"
+	"Mouse.hpp"
+	<vector>
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\coloredspritegroup.cpp
+	"ColoredSpriteGroup.hpp"
+	"f_common.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\coloredspritegroup.hpp
+	"animations/iAnimatable.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\f_sfml_common.cpp
+	"f_common.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\managedtext.cpp
+	"ManagedText.hpp"
+	"f_common.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\mouse.cpp
+	"Mouse.hpp"
+	"../zf_common/f_inputs.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_common\f_inputs.hpp
+	"InputState.hpp"
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\selectionbox.cpp
+	"SelectionBox.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\selectionbox.hpp
+	"../zf_common/Grid.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\sfml_f_debug.cpp
+	"f_debug.hpp"
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\f_debug.hpp
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\shiftbutton.cpp
+	"ShiftButton.hpp"
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\shiftbutton.hpp
+	"f_common.hpp"
+	"animations/iAnimatable.hpp"
+	<SFML/Graphics.hpp>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\spritegroup.cpp
+	"SpriteGroup.hpp"
+	"f_common.hpp"
+	<iostream>
+
+1390888873 c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\spritegroup.hpp
+	"animations/iAnimatable.hpp"
+	<SFML/Graphics.hpp>
+	<vector>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\spritesheet.cpp
+	"SpriteSheet.hpp"
+	<iostream>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\textureregion.cpp
+	"TextureRegion.hpp"
+	<iostream>
+
+1390888873 source:c:\users\zwodahs\desktop\memorysquares\memorysquares\z_framework\zf_sfml\vertexbutton.cpp
+	"VertexButton.hpp"
+	"f_common.hpp"
+
